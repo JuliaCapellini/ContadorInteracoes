@@ -3,12 +3,14 @@ let res = document.querySelector('section#result')
 
 function contar() {
     contador ++
-    res.innerHTML = <p>O contador está com <mark>${contador}</mark> cliques.</p>
+    res.innerHTML = `<p>Hoje você fez <mark>${contador}</mark> interações.</p>`
 }
 
 function diminuir() {
-    contador --
-    res.innerHTML = <p>O contador está com <mark>${contador}</mark> cliques.</p>
+    if (contador > 0) {
+        contador--
+        res.innerHTML = `<p>Hoje você fez <mark>${contador}</mark> interações.</p>`
+    }
 }
 
 function zerar() {

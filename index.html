@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Contador de interações</title>
 </head>
+
 <body>
-    <h1>Contador de caracteres</h1>
-    <button onclick="contar()">Adicionar interação</button>
-    <button onclick="diminuir()">Diminuir interação</button>
-    <button onclick="zerar()">Zerar contador</button>
-    <section id="result">
-        <p>Hoje você fez <mark>0</mark> interações.</p>
-    </section>
-    
+    <div class="contador">
+        <h1>Contador de caracteres</h1>
+        <button onclick="contar()">Adicionar interação</button>
+        <button onclick="diminuir()">Diminuir interação</button>
+        <button onclick="zerar()">Zerar contador</button>
+        <section id="result">
+            <p>Hoje você fez <mark>0</mark> interações.</p>
+        </section>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
